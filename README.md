@@ -4,7 +4,7 @@ A single-page, arcade-styled portfolio for a Cloud & AI Security Engineer.
 Static HTML + Tailwind (Play CDN) + vanilla JavaScript. No build step, no
 trackers, deploys for free to GitHub Pages or Vercel on every push to `main`.
 
-**Live:** https://slethabo.github.io/portfolio/ (update after first deploy)
+**Live:** https://portfolio-ez7766l1w-lee-1a33.vercel.app/ 
 
 ## Features
 
