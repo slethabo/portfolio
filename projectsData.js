@@ -24,9 +24,9 @@ const siteConfig = {
   ],
   tagline:
     "I build cloud defences that fight back: automated remediation on AWS, purple-team labs in Terraform, and LLM triage with real guardrails.",
-  location: "Your City, Country", // TODO
-  email: "you@example.com", // TODO
-  linkedin: "https://www.linkedin.com/in/your-handle", // TODO
+  location: "Cape Town, South Africa", 
+  email: "sangwenilethabo680@gmail.com", // TODO
+  linkedin: "https://www.linkedin.com/in/lethabo-sangweni/", // TODO
   github: "https://github.com/slethabo",
   resumePdf: "./assets/Lethabo-Sangweni-Resume.pdf", // drop your PDF at this path
   // Used for canonical/OG URLs in README instructions. Update after first deploy.
@@ -53,7 +53,7 @@ const siteConfig = {
   experience: [
     {
       role: "Penetration Testing Intern",
-      org: "Company Name", // TODO
+      org: "Nascent", 
       period: "2026 – Present",
       bullets: [
         "Perform web application and cloud configuration assessments; write findings with reproduction steps and remediation guidance.",
@@ -65,15 +65,15 @@ const siteConfig = {
 
   education: [
     {
-      title: "Your Degree / Programme", // TODO
-      org: "Institution",
-      period: "20XX – 20XX",
+      title: "Bsc Computer Science",
+      org: "University of Western Cape",
+      period: "Completion 03/11/2026",
     },
   ],
 
   certifications: [
     // e.g. "AWS Certified Cloud Practitioner", "CompTIA Security+", "eJPT"
-    "Add certifications here", // TODO
+    ""ISC CC", "CompTIA Security+","CompTIA A+"", // TODO
   ],
 };
 
