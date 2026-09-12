@@ -7,3 +7,6 @@ node_modules/
 # raw recordings — commit only the compressed exports in assets/demos/
 *.mov
 raw/
+
+.vercel
+.env*

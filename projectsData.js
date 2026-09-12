@@ -73,7 +73,9 @@ const siteConfig = {
 
   certifications: [
     // e.g. "AWS Certified Cloud Practitioner", "CompTIA Security+", "eJPT"
-    ""ISC CC", "CompTIA Security+","CompTIA A+"", // TODO
+    "ISC2 Certified in Cybersecurity (CC)",
+    "CompTIA Security+",
+    "CompTIA A+",
   ],
 };
 
