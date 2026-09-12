@@ -1,0 +1,252 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" width="640" height="520" role="img" aria-labelledby="avatarTitle avatarDesc">
+  <title id="avatarTitle">Cloud security engineer at her desk</title>
+  <desc id="avatarDesc">A Black woman with glasses, over-ear headphones and a high ponytail wearing a purple hoodie, sitting at a desk with three glowing monitors, a mug and a plant.</desc>
+
+  <defs>
+    <radialGradient id="gPurple" cx="50%" cy="45%" r="60%">
+      <stop offset="0" stop-color="#7C3AED" stop-opacity=".55"/>
+      <stop offset="1" stop-color="#0B0F19" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gScreen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1B2140"/>
+      <stop offset="1" stop-color="#0F1428"/>
+    </linearGradient>
+    <linearGradient id="gLens" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF4FD8" stop-opacity=".6"/>
+      <stop offset=".5" stop-color="#7C3AED" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#67E8F9" stop-opacity=".5"/>
+    </linearGradient>
+    <linearGradient id="gHoodie" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#4A3585"/>
+      <stop offset="1" stop-color="#2E2154"/>
+    </linearGradient>
+    <linearGradient id="gDesk" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B2340"/>
+      <stop offset="1" stop-color="#10152A"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowSoft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7C3AED" stroke-opacity=".12"/>
+    </pattern>
+    <pattern id="keys" x="252" y="437" width="12" height="11" patternUnits="userSpaceOnUse">
+      <rect width="8" height="7" rx="1.5" fill="#2C3557"/>
+    </pattern>
+    <style>
+      @keyframes flicker { 0%,100% { opacity:.82 } 50% { opacity:1 } }
+      @keyframes twinkle { 0%,100% { opacity:.55 } 50% { opacity:1 } }
+      @keyframes steam { 0% { transform:translateY(0); opacity:0 } 30% { opacity:.6 } 100% { transform:translateY(-22px); opacity:0 } }
+      @keyframes blink { 0%,92%,100% { transform:scaleY(1) } 96% { transform:scaleY(.08) } }
+      @keyframes cursor { 50% { opacity:0 } }
+      .screen { animation: flicker 3.4s ease-in-out infinite }
+      .lights circle { animation: twinkle 2.2s ease-in-out infinite }
+      .lights circle:nth-child(even) { animation-delay: 1.1s }
+      .steam path { animation: steam 3s ease-out infinite }
+      .steam path:nth-child(2) { animation-delay: 1.2s }
+      .eyes { transform-origin: 320px 209px; animation: blink 5.5s infinite }
+      .cursor { animation: cursor 1s steps(1) infinite }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important } }
+    </style>
+  </defs>
+
+  <!-- ===== room ===== -->
+  <rect width="640" height="520" rx="28" fill="#0B0F19"/>
+  <rect width="640" height="520" rx="28" fill="url(#grid)"/>
+  <ellipse cx="320" cy="210" rx="300" ry="190" fill="url(#gPurple)"/>
+
+  <!-- string lights -->
+  <path d="M20 34 Q170 72 320 36 T620 34" fill="none" stroke="#2A2140" stroke-width="2"/>
+  <g class="lights" filter="url(#glow)">
+    <circle cx="80"  cy="49" r="5" fill="#FF4FD8"/>
+    <circle cx="160" cy="57" r="5" fill="#A855F7"/>
+    <circle cx="240" cy="50" r="5" fill="#FF4FD8"/>
+    <circle cx="320" cy="36" r="5" fill="#67E8F9"/>
+    <circle cx="400" cy="50" r="5" fill="#FF4FD8"/>
+    <circle cx="480" cy="57" r="5" fill="#A855F7"/>
+    <circle cx="560" cy="49" r="5" fill="#FF4FD8"/>
+  </g>
+
+  <!-- ===== monitors ===== -->
+  <!-- screen glow pools -->
+  <ellipse cx="126" cy="190" rx="70" ry="80" fill="#FF4FD8" opacity=".18" filter="url(#glowSoft)"/>
+  <ellipse cx="320" cy="166" rx="120" ry="80" fill="#7C3AED" opacity=".28" filter="url(#glowSoft)"/>
+  <ellipse cx="514" cy="190" rx="70" ry="80" fill="#67E8F9" opacity=".14" filter="url(#glowSoft)"/>
+
+  <!-- left monitor -->
+  <polygon points="56,118 196,100 196,258 56,276" fill="#12172A" stroke="#FF4FD8" stroke-width="2" filter="url(#glow)"/>
+  <polygon class="screen" points="66,128 186,112 186,246 66,262" fill="url(#gScreen)"/>
+  <g stroke-linecap="round" stroke-width="4" opacity=".9">
+    <line x1="76" y1="141" x2="130" y2="134" stroke="#FF4FD8"/>
+    <line x1="76" y1="155" x2="160" y2="144" stroke="#A855F7"/>
+    <line x1="86" y1="169" x2="150" y2="160" stroke="#67E8F9"/>
+    <line x1="86" y1="183" x2="120" y2="178" stroke="#A855F7"/>
+    <line x1="76" y1="197" x2="170" y2="185" stroke="#FF4FD8"/>
+    <line x1="76" y1="211" x2="140" y2="203" stroke="#67E8F9"/>
+    <line x1="86" y1="225" x2="165" y2="215" stroke="#A855F7"/>
+    <line x1="76" y1="239" x2="110" y2="235" stroke="#A3E635"/>
+  </g>
+  <rect x="116" y="276" width="20" height="18" fill="#1E2540"/>
+  <rect x="92" y="292" width="68" height="7" rx="3" fill="#1E2540"/>
+
+  <!-- right monitor -->
+  <polygon points="444,100 584,118 584,276 444,258" fill="#12172A" stroke="#67E8F9" stroke-width="2" filter="url(#glow)"/>
+  <polygon class="screen" points="454,112 574,128 574,262 454,246" fill="url(#gScreen)"/>
+  <g stroke-linecap="round" stroke-width="4" opacity=".9">
+    <line x1="464" y1="134" x2="540" y2="144" stroke="#67E8F9"/>
+    <line x1="464" y1="148" x2="510" y2="154" stroke="#FF4FD8"/>
+    <line x1="474" y1="162" x2="556" y2="173" stroke="#A855F7"/>
+    <line x1="474" y1="176" x2="520" y2="182" stroke="#67E8F9"/>
+    <line x1="464" y1="190" x2="546" y2="201" stroke="#FF4FD8"/>
+    <line x1="464" y1="204" x2="500" y2="209" stroke="#A855F7"/>
+    <line x1="474" y1="218" x2="560" y2="229" stroke="#67E8F9"/>
+  </g>
+  <!-- a green "shield ok" widget on the right screen -->
+  <circle cx="548" cy="244" r="7" fill="#A3E635" opacity=".9" filter="url(#glow)"/>
+  <path d="M544 244 l3 3 l6 -6" fill="none" stroke="#0B0F19" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="504" y="276" width="20" height="18" fill="#1E2540"/>
+  <rect x="480" y="292" width="68" height="7" rx="3" fill="#1E2540"/>
+
+  <!-- centre monitor -->
+  <rect x="196" y="86" width="248" height="160" rx="10" fill="#12172A" stroke="#A855F7" stroke-width="2" filter="url(#glow)"/>
+  <rect class="screen" x="208" y="98" width="224" height="136" rx="6" fill="url(#gScreen)"/>
+  <g stroke-linecap="round" stroke-width="4" opacity=".9">
+    <line x1="218" y1="112" x2="262" y2="112" stroke="#A855F7"/>
+    <line x1="218" y1="126" x2="280" y2="126" stroke="#FF4FD8"/>
+    <line x1="228" y1="140" x2="270" y2="140" stroke="#67E8F9"/>
+    <line x1="228" y1="154" x2="258" y2="154" stroke="#A855F7"/>
+    <line x1="218" y1="168" x2="272" y2="168" stroke="#FF4FD8"/>
+    <line x1="370" y1="112" x2="422" y2="112" stroke="#FF4FD8"/>
+    <line x1="380" y1="126" x2="422" y2="126" stroke="#67E8F9"/>
+    <line x1="380" y1="140" x2="410" y2="140" stroke="#A855F7"/>
+    <line x1="370" y1="154" x2="422" y2="154" stroke="#A3E635"/>
+    <line x1="370" y1="168" x2="400" y2="168" stroke="#FF4FD8"/>
+  </g>
+  <rect class="cursor" x="232" y="180" width="8" height="4" fill="#FF4FD8"/>
+  <!-- sticky note -->
+  <g transform="rotate(6 412 104)">
+    <rect x="398" y="92" width="28" height="24" rx="2" fill="#FDE68A"/>
+    <line x1="403" y1="100" x2="421" y2="100" stroke="#B45309" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="403" y1="106" x2="416" y2="106" stroke="#B45309" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+  <rect x="308" y="246" width="24" height="26" fill="#1E2540"/>
+  <rect x="280" y="270" width="80" height="8" rx="4" fill="#1E2540"/>
+
+  <!-- ===== character ===== -->
+  <!-- ponytail (behind head) -->
+  <path d="M326 146 C340 105 400 95 420 130 C438 162 420 200 440 240 C450 262 445 285 430 300 C418 280 405 262 402 235 C398 205 388 180 372 168 C360 158 345 156 332 160 Z" fill="#1A1421"/>
+  <path d="M348 132 C380 116 410 128 418 150" fill="none" stroke="#3A2A4A" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+  <path d="M410 200 C420 230 432 250 436 280" fill="none" stroke="#3A2A4A" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+  <!-- hair volume -->
+  <ellipse cx="320" cy="185" rx="58" ry="50" fill="#1A1421"/>
+
+  <!-- hoodie body -->
+  <path d="M214 420 L222 330 C228 296 268 278 300 276 L340 276 C372 278 412 296 418 330 L426 420 Z" fill="url(#gHoodie)" stroke="#6D4FD6" stroke-width="1.5"/>
+  <!-- neck -->
+  <rect x="304" y="250" width="32" height="38" rx="8" fill="#5C3A21"/>
+  <!-- hood collar -->
+  <ellipse cx="320" cy="283" rx="44" ry="13" fill="#2F2257" stroke="#6D4FD6" stroke-width="1"/>
+  <path d="M276 283 Q320 300 364 283" fill="none" stroke="#6D4FD6" stroke-width="1" opacity=".6"/>
+  <!-- drawstrings -->
+  <path d="M312 292 L309 346" stroke="#FF4FD8" stroke-width="2" stroke-linecap="round"/>
+  <path d="M328 292 L331 346" stroke="#FF4FD8" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="309" cy="349" r="3" fill="#FF9AE8"/>
+  <circle cx="331" cy="349" r="3" fill="#FF9AE8"/>
+  <!-- chest print: >_ -->
+  <polyline points="306,374 314,380 306,386" fill="none" stroke="#67E8F9" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="319" y="384" width="12" height="3" rx="1" fill="#FF4FD8"/>
+
+  <!-- face -->
+  <ellipse cx="320" cy="205" rx="50" ry="57" fill="#6B4423"/>
+  <!-- hairline / edges -->
+  <path d="M268 194 C266 138 374 138 372 194 C360 178 340 172 320 172 C300 172 280 178 268 194 Z" fill="#1A1421"/>
+  <path d="M272 196 q-6 6 -4 14" fill="none" stroke="#1A1421" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M368 196 q6 6 4 14" fill="none" stroke="#1A1421" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- hair tie -->
+  <ellipse cx="334" cy="150" rx="9" ry="6" transform="rotate(-30 334 150)" fill="#FF4FD8" filter="url(#glow)"/>
+
+  <!-- blush -->
+  <circle cx="290" cy="228" r="8" fill="#FF4FD8" opacity=".18"/>
+  <circle cx="350" cy="228" r="8" fill="#FF4FD8" opacity=".18"/>
+
+  <!-- eyebrows -->
+  <path d="M290 191 Q301 185 312 190" fill="none" stroke="#1A1421" stroke-width="3" stroke-linecap="round"/>
+  <path d="M328 190 Q339 185 350 191" fill="none" stroke="#1A1421" stroke-width="3" stroke-linecap="round"/>
+  <!-- eyes -->
+  <g class="eyes">
+    <ellipse cx="301" cy="209" rx="7" ry="5.5" fill="#FFF7F0"/>
+    <ellipse cx="339" cy="209" rx="7" ry="5.5" fill="#FFF7F0"/>
+    <circle cx="302" cy="209.5" r="3.4" fill="#1A1421"/>
+    <circle cx="340" cy="209.5" r="3.4" fill="#1A1421"/>
+    <circle cx="303.2" cy="208.2" r="1.1" fill="#FFFFFF"/>
+    <circle cx="341.2" cy="208.2" r="1.1" fill="#FFFFFF"/>
+  </g>
+  <!-- glasses -->
+  <g stroke="#FF9AE8" stroke-width="2.5" fill="url(#gLens)">
+    <rect x="283" y="196" width="34" height="26" rx="9"/>
+    <rect x="323" y="196" width="34" height="26" rx="9"/>
+  </g>
+  <path d="M317 208 Q320 203 323 208" fill="none" stroke="#FF9AE8" stroke-width="2.5"/>
+  <line x1="283" y1="206" x2="270" y2="204" stroke="#FF9AE8" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="357" y1="206" x2="370" y2="204" stroke="#FF9AE8" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- lens glare -->
+  <line x1="289" y1="214" x2="297" y2="202" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+  <line x1="329" y1="214" x2="337" y2="202" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" opacity=".55"/>
+  <!-- nose & smile -->
+  <path d="M320 220 q-5 9 3 11" fill="none" stroke="#4A2A15" stroke-width="2" stroke-linecap="round"/>
+  <path d="M307 240 Q320 252 333 240" fill="none" stroke="#3B1F12" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- earring (under left cup) -->
+  <circle cx="262" cy="242" r="5" fill="none" stroke="#FFD166" stroke-width="2"/>
+
+  <!-- headphones -->
+  <path d="M266 202 A54 54 0 0 1 374 202" fill="none" stroke="#2A2140" stroke-width="11" stroke-linecap="round"/>
+  <path d="M270 200 A50 50 0 0 1 370 200" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+  <g>
+    <rect x="246" y="188" width="28" height="46" rx="11" fill="#2A2140" stroke="#FF4FD8" stroke-width="1.5"/>
+    <rect x="252" y="196" width="16" height="30" rx="7" fill="#3B2A6B"/>
+    <circle cx="260" cy="230" r="2.5" fill="#FF4FD8" filter="url(#glow)"/>
+    <rect x="366" y="188" width="28" height="46" rx="11" fill="#2A2140" stroke="#FF4FD8" stroke-width="1.5"/>
+    <rect x="372" y="196" width="16" height="30" rx="7" fill="#3B2A6B"/>
+    <circle cx="380" cy="230" r="2.5" fill="#FF4FD8" filter="url(#glow)"/>
+  </g>
+
+  <!-- ===== desk ===== -->
+  <rect x="0" y="402" width="640" height="118" fill="url(#gDesk)"/>
+  <rect x="0" y="396" width="640" height="10" fill="#1B2340"/>
+  <line x1="0" y1="396" x2="640" y2="396" stroke="#FF4FD8" stroke-width="2" opacity=".85" filter="url(#glow)"/>
+
+  <!-- keyboard -->
+  <rect x="244" y="430" width="152" height="30" rx="6" fill="#1E2540" stroke="#7C3AED" stroke-width="1.5"/>
+  <rect x="252" y="437" width="136" height="18" fill="url(#keys)"/>
+  <!-- arms & hands -->
+  <path d="M236 382 Q240 420 268 438" fill="none" stroke="#3B2A6B" stroke-width="26" stroke-linecap="round"/>
+  <path d="M404 382 Q400 420 372 438" fill="none" stroke="#3B2A6B" stroke-width="26" stroke-linecap="round"/>
+  <ellipse cx="276" cy="444" rx="16" ry="10" fill="#6B4423"/>
+  <ellipse cx="364" cy="444" rx="16" ry="10" fill="#6B4423"/>
+
+  <!-- mug -->
+  <rect x="456" y="418" width="34" height="36" rx="7" fill="#FF4FD8" opacity=".92"/>
+  <path d="M490 428 q14 10 0 20" fill="none" stroke="#FF4FD8" stroke-width="5" stroke-linecap="round"/>
+  <rect x="462" y="440" width="22" height="3" rx="1.5" fill="#FF9AE8" opacity=".7"/>
+  <g class="steam" stroke="#FF9AE8" stroke-width="2" fill="none" stroke-linecap="round">
+    <path d="M466 412 q4 -8 0 -14"/>
+    <path d="M478 412 q-4 -8 0 -14"/>
+  </g>
+
+  <!-- plant -->
+  <ellipse cx="150" cy="408" rx="8" ry="18" fill="#34D399"/>
+  <ellipse cx="138" cy="412" rx="7" ry="16" transform="rotate(-28 138 412)" fill="#2DB985"/>
+  <ellipse cx="162" cy="412" rx="7" ry="16" transform="rotate(28 162 412)" fill="#2DB985"/>
+  <polygon points="128,428 172,428 166,460 134,460" fill="#7C3AED"/>
+  <rect x="124" y="422" width="52" height="8" rx="3" fill="#A855F7"/>
+
+  <!-- tiny rubber duck, because every SOC needs one -->
+  <ellipse cx="560" cy="446" rx="12" ry="8" fill="#FDE68A"/>
+  <circle cx="568" cy="436" r="7" fill="#FDE68A"/>
+  <circle cx="571" cy="435" r="1.2" fill="#1A1421"/>
+  <path d="M575 437 l6 1 l-6 2 Z" fill="#F97316"/>
+</svg>

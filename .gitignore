@@ -1,0 +1,9 @@
+.DS_Store
+Thumbs.db
+node_modules/
+.vercel/
+*.log
+
+# raw recordings — commit only the compressed exports in assets/demos/
+*.mov
+raw/
