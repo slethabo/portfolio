@@ -46,7 +46,7 @@ python -m http.server 8080
 ## Add a lab write-up
 
 1. Put the write-up in `writeups/`, e.g. `writeups/2026-03-htb-example.md` or a
-   `.pdf`. `writeups/placeholder-01.md` is a template you can copy.
+   `.pdf`. `writeups/TEMPLATE.md` is a template you can copy.
 2. Add an entry to `writeups/writeups.json`:
 
    ```json
@@ -67,8 +67,7 @@ python -m http.server 8080
    - `file` can be a relative path or a full `https://` link (e.g. the GitHub
      view of the file, which renders Markdown nicely; GitHub Pages serves
      `.md` files as plain text).
-3. Delete the two placeholder entries (and their `.md` files) once you have
-   real ones.
+3. `title`, `date` and `summary` are required; the deploy check fails without them.
 
 ## Add a community entry
 

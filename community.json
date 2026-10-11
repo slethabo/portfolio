@@ -1,26 +1,26 @@
 [
   {
-    "date": "2026-06",
-    "type": "volunteering",
-    "title": "Exhibtion Volunteer ",
-    "org": "DeepLearning Indaba",
-    "summary": "Help set up and take down for AI festival",
-    "url": ""
-  },
-    {
     "date": "2026-10-10",
     "type": "volunteering",
-    "title": "Set Up and Take down",
+    "title": "Set-up and take-down volunteer",
     "org": "DevFest",
-    "summary": "Help set up and take down of event set up",
+    "summary": "Helped set up and take down the event.",
     "url": ""
   },
   {
     "date": "2026-10",
     "type": "talk",
-    "title": "How to break into Cyber",
-    "org": "WICS Cyber Awareness month",
-    "summary": "Advise students on how to break into Cyber : training , Cert ect.",
+    "title": "How to break into cyber",
+    "org": "WICS Cyber Awareness Month",
+    "summary": "Advised students on how to break into cyber: training and certifications.",
+    "url": ""
+  },
+  {
+    "date": "2026-06",
+    "type": "volunteering",
+    "title": "Exhibition volunteer",
+    "org": "Deep Learning Indaba",
+    "summary": "Helped set up and take down the exhibition at the AI festival.",
     "url": ""
   }
 ]

@@ -219,7 +219,7 @@ other websites.
 
 ### 4.6 Add a lab write-up
 
-1. Write it up. Copy `writeups/placeholder-01.md` as a template, or export a PDF.
+1. Write it up. Copy `writeups/TEMPLATE.md` as a starting point, or export a PDF.
 2. Upload it to `writeups/`. A name like `2026-11-htb-boxname.md` keeps things tidy.
 3. Open `writeups/writeups.json` and add an entry. Add it **after** the
    opening `[`, then put a comma after its closing `}`:
@@ -243,8 +243,9 @@ other websites.
    - `date` must be `YYYY-MM-DD`. The site sorts newest first and groups by year.
    - `tags` become the filter buttons. Keep them short and lowercase.
    - `file` can also be a full `https://…` link.
-4. Once you have real write-ups, delete the two placeholder entries from the
-   JSON file and delete `writeups/placeholder-01.md` and `placeholder-02.md`.
+4. **Required:** every entry needs `title`, `date` and `summary`, or the
+   deploy fails with a red cross. `platform`, `difficulty`, `tags`,
+   `gotWrong` and `file` are optional; leave out any you don't have.
 
 Tip: GitHub Pages shows `.md` files as plain text. If you want the write-up
 nicely formatted, upload a PDF, or set `file` to the GitHub view of the file:
@@ -417,7 +418,7 @@ Then:
 | Write-ups show "Couldn't load…" only on your computer | You opened `index.html` directly | Use `python -m http.server 8080` (see [2B](#b-on-your-computer-lets-you-preview-first)). |
 | Demo still shows the yellow TODO | The file name doesn't match `src` exactly (it's case-sensitive), or the file wasn't uploaded to `assets/demos/` | Check the spelling on both sides. |
 | Changes aren't on the live site | The deploy is still running or failed, or your browser is caching | Check the **Actions** tab; hard-refresh with Ctrl+F5; bump the `?v=` number (4.12). |
-| Red cross in Actions | The deploy checks failed | Click the failed run; the red step tells you which file and line. Yellow warnings (leftover TODOs, placeholders) don't block publishing. |
+| Red cross in Actions | The deploy checks failed. Most often a write-up is missing `summary`, or a community entry is missing `title`, `date` or `org`. | Click the failed run; the red step tells you which file and entry, e.g. `writeups.json[0] missing "summary"`. Yellow warnings (leftover TODOs, placeholders) don't block publishing. |
 | Layout broke after editing HTML | A tag was opened but not closed | Every `<p>`, `<li>`, `<div>`, `<article>` needs its matching `</…>`. Undo your last change and redo it carefully. |
 
 ---
