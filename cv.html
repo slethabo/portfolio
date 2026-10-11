@@ -13,9 +13,9 @@
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://slethabo.github.io/portfolio/cv.html">
 
-  <link rel="stylesheet" href="./styles.css?v=2.2">
-  <script src="./theme.js?v=2.2"></script>
-  <script src="./main.js?v=2.2" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=2.3">
+  <script src="./theme.js?v=2.3"></script>
+  <script src="./main.js?v=2.3" defer></script>
 </head>
 
 <body class="cv-page">
@@ -48,7 +48,7 @@
       <header class="cv-head">
         <p class="path no-print" aria-hidden="true">~/cv/</p>
         <h1>Lethabo Sangweni</h1>
-        <p class="cv-title">Junior Penetration Tester</p>
+        <p class="cv-title">Penetration Tester</p>
         <p class="cv-contact">
           <span>Cape Town, South Africa</span>
           <a href="mailto:sangwenilethabo680@gmail.com">sangwenilethabo680@gmail.com</a>
@@ -62,24 +62,42 @@
       <section>
         <h2>Summary</h2>
         <p>
-          Junior penetration tester at Nascent, working toward offensive AI and cloud security. My work covers
-          OSINT, API and web application testing, and Android app (APK) analysis, written up as reports. Outside
-          work I build on AWS: my current project automatically deactivates leaked IAM access keys.
+          Penetration tester at Nascent with a GRC background from Sanlam, working toward offensive AI and
+          cloud security. I test web applications and infrastructure, validate findings by hand, and write them
+          up with evidence, risk ratings and remediation advice. Outside work I build on AWS: my current
+          project automatically deactivates leaked IAM access keys.
         </p>
       </section>
 
-      <section>
+      <section class="cv-experience">
         <h2>Experience</h2>
         <div class="cv-entry">
           <div class="cv-entry-head">
-            <h3>Junior Penetration Tester <span class="muted">· Nascent, Cape Town</span></h3>
-            <span class="cv-period">2026 – present</span>
+            <h3>Penetration Tester <span class="muted">· Nascent, Cape Town</span></h3>
+            <span class="cv-period">Jun 2026 – present</span>
           </div>
           <ul>
-            <li>OSINT on client targets.</li>
-            <li>API and web application testing.</li>
-            <li>Deconstructing Android apps (APKs) to understand how they work and where they're weak.</li>
-            <li>Writing up findings as client reports.</li>
+            <li>Conduct web application and infrastructure security assessments to identify technical weaknesses, insecure configurations and potential attack paths.</li>
+            <li>Perform structured reconnaissance and enumeration to identify exposed services, applications, systems and other attack-surface information before deeper testing.</li>
+            <li>Validate potential vulnerabilities with security testing tools and manual analysis, separating actionable findings from false positives before reporting.</li>
+            <li>Document findings with clear technical evidence, risk ratings, business-relevant descriptions and practical remediation recommendations.</li>
+            <li>Use Burp Suite, Nmap, Wireshark and Gobuster for reconnaissance, network analysis and web application testing.</li>
+            <li>Support security assessments in AWS environments, applying knowledge of cloud identity and access management, logging and monitoring.</li>
+            <li>Apply Linux, Windows, networking and scripting knowledge during technical assessments and investigations.</li>
+          </ul>
+        </div>
+        <div class="cv-entry">
+          <div class="cv-entry-head">
+            <h3>GRC Analyst <span class="muted">· Sanlam, Cape Town</span></h3>
+            <span class="cv-period">Sep 2025 – May 2026</span>
+          </div>
+          <ul>
+            <li>Supported information-security risk assessments and compliance reviews in a large enterprise, helping identify and document technology and security risks.</li>
+            <li>Reviewed SOC reports and penetration-testing summaries to understand control observations, weaknesses and required follow-up actions.</li>
+            <li>Supported security-governance documentation and prepared evidence and supporting material for audit and compliance activities.</li>
+            <li>Assisted with aligning and reviewing information-security policies, governance requirements and organisational security practices.</li>
+            <li>Collaborated with the Cybersecurity, Identity and Access Management, and Data Security teams on governance and security initiatives.</li>
+            <li>Gained practical exposure to how technical security controls relate to organisational risk, compliance requirements and information-security governance.</li>
           </ul>
         </div>
       </section>
@@ -104,13 +122,15 @@
         <h2>Skills</h2>
         <dl class="cv-skills">
           <dt>Testing</dt>
-          <dd>OSINT, API testing, web application testing, Android APK analysis, report writing</dd>
+          <dd>Web application and infrastructure testing, reconnaissance and enumeration, OSINT, API testing, Android APK analysis, vulnerability validation, report writing</dd>
+          <dt>Tools</dt>
+          <dd>Burp Suite, Nmap, Wireshark, Gobuster</dd>
           <dt>Cloud</dt>
           <dd>AWS IAM, Lambda, EventBridge, GuardDuty, CloudTrail, SQS, Terraform</dd>
-          <dt>Code</dt>
-          <dd>Python, boto3, pytest + moto, GitHub Actions, Git</dd>
-          <dt>Tools</dt>
-          <dd><span class="todo">[TODO: the tools you use every day, e.g. Burp Suite, jadx, Postman]</span></dd>
+          <dt>Code &amp; OS</dt>
+          <dd>Python, boto3, pytest + moto, GitHub Actions, Git, Linux, Windows, networking</dd>
+          <dt>GRC</dt>
+          <dd>Risk assessments, compliance reviews, SOC report review, audit evidence, policy review</dd>
         </dl>
       </section>
 
@@ -125,7 +145,7 @@
         <div class="cv-entry">
           <div class="cv-entry-head">
             <h3>Cybersecurity training <span class="muted">· MiDo Academy</span></h3>
-            <span class="cv-period"><span class="todo">[TODO: year]</span></span>
+            <span class="cv-period">completed Nov 2025</span>
           </div>
         </div>
       </section>
@@ -136,7 +156,7 @@
           <li>ISC2 Certified in Cybersecurity (CC)</li>
           <li>CompTIA Security+</li>
           <li>CompTIA A+</li>
-          <li><span class="todo">[TODO: exact name of your AWS security badge]</span></li>
+          <li>AWS Cloud Quest: Security – Training Badge</li>
         </ul>
       </section>
     </article>

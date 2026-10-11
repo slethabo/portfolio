@@ -853,8 +853,13 @@ pre code {
     margin-top: 0.1rem;
   }
   .cv-entry,
-  .cv li {
+  .cv li,
+  .cv section:not(.cv-experience) {
     break-inside: avoid;
+  }
+  .cv h2,
+  .cv-entry-head {
+    break-after: avoid;
   }
   .cv-page a[href^="http"]::after {
     content: none;

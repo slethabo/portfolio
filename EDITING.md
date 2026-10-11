@@ -275,7 +275,7 @@ Delete the two `[PLACEHOLDER]` entries once you've added real ones.
 
 Your CV is its own page, `cv.html`, linked from the **Recruiter view (CV)**
 button in the header and from the Contact section. Recruiters can read it on
-screen or click **Print / save as PDF** to get a clean one-page PDF.
+screen or click **Print / save as PDF** to get a clean PDF.
 
 To update it, edit `cv.html`. It's plain HTML in the same patterns as the
 main page:
@@ -291,8 +291,8 @@ main page:
 When you change something that's also on the main page (job title, certs,
 projects), update **both** `index.html` and `cv.html`.
 
-After editing, click **Print / save as PDF** to check it still fits on one
-page. If it spills onto two, trim a bullet or two.
+After editing, click **Print / save as PDF** to check the layout. Two pages
+is fine; just make sure nothing looks cut off at the page break.
 
 Prefer a PDF you made yourself (e.g. in Word)? Upload it to `assets/` and
 change the Contact-section CV link in `index.html` to point at it:
@@ -354,8 +354,8 @@ Browsers cache `styles.css` and `main.js`. After changing either one, bump the
 version number in the `<head>` of **both** `index.html` and `cv.html`:
 
 ```html
-<link rel="stylesheet" href="./styles.css?v=2.2">   →   ?v=2.3
-<script src="./main.js?v=2.2" defer></script>        →   ?v=2.3
+<link rel="stylesheet" href="./styles.css?v=2.3">   →   ?v=2.4
+<script src="./main.js?v=2.3" defer></script>        →   ?v=2.4
 ```
 
 ### 4.13 Page title and link previews (LinkedIn, WhatsApp)
