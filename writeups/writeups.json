@@ -1,22 +1,19 @@
 [
   {
-    "title": "[PLACEHOLDER] Example write-up one, replace me",
+    "title": "Cloud Security Labs",
     "date": "2026-01-10",
-    "platform": "[TODO: e.g. Hack The Box, TryHackMe, own lab]",
-    "difficulty": "easy",
-    "tags": ["web", "linux"],
-    "summary": "Fake entry so the layout has something to show. Replace with one or two lines: what the target was and how you got in.",
-    "gotWrong": "[TODO: the assumption or step that cost you the most time]",
-    "file": "writeups/placeholder-01.md"
+    "platform": "PWNED Labs",
+    "difficulty": "intermediate",
+    "tags": ["web", "linux", "AWS"],
+    "file": "https://github.com/slethabo/cloud-security-labs"
   },
   {
-    "title": "[PLACEHOLDER] Example write-up two, replace me",
+    "title": "Portswigger",
     "date": "2026-02-14",
-    "platform": "[TODO: platform]",
+    "platform": "Portswigger",
     "difficulty": "medium",
     "tags": ["linux", "privesc"],
-    "summary": "Second fake entry, here to show newest-first sorting and the tag filter. Delete both once you have real ones.",
-    "gotWrong": "[TODO: what you'd check first next time]",
+    "summary": "WebAPI testing.",
     "file": "writeups/placeholder-02.md"
   }
 ]
