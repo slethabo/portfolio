@@ -185,8 +185,7 @@
               being used from a known-bad IP, but it doesn't act on the finding. Someone still has to see
               the alert, work out who owns the key, and turn it off.
             </p>
-            <p><span class="todo">[TODO, optional: why you picked this problem.]</span></p>
-
+            
             <h4>What I built</h4>
             <p>
               An EventBridge rule catches the finding and passes the key ID to a Lambda function, which
@@ -207,7 +206,7 @@
             </ol>
 
             <figure class="code">
-              <figcaption>infra/ · the remediation role's only permissions <span class="todo">[TODO: swap in the exact statement from your Terraform]</span></figcaption>
+              <figcaption>infra/ · the remediation role's only permissions </figcaption>
 <pre><code>{
   "Effect": "Allow",
   "Action": [
@@ -232,7 +231,6 @@
             <h4>What went wrong</h4>
             <!-- Hint from your old project notes: the first version enumerated every IAM user to find the
                  key owner before you switched to a single GetAccessKeyLastUsed call. Only use it if true. -->
-            <p><span class="todo">[TODO: something that didn't work the first time, and what you changed.]</span></p>
 
             <h4>Result</h4>
             <ul>
