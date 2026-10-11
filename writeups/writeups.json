@@ -1,0 +1,22 @@
+[
+  {
+    "title": "[PLACEHOLDER] Example write-up one, replace me",
+    "date": "2026-01-10",
+    "platform": "[TODO: e.g. Hack The Box, TryHackMe, own lab]",
+    "difficulty": "easy",
+    "tags": ["web", "linux"],
+    "summary": "Fake entry so the layout has something to show. Replace with one or two lines: what the target was and how you got in.",
+    "gotWrong": "[TODO: the assumption or step that cost you the most time]",
+    "file": "writeups/placeholder-01.md"
+  },
+  {
+    "title": "[PLACEHOLDER] Example write-up two, replace me",
+    "date": "2026-02-14",
+    "platform": "[TODO: platform]",
+    "difficulty": "medium",
+    "tags": ["linux", "privesc"],
+    "summary": "Second fake entry, here to show newest-first sorting and the tag filter. Delete both once you have real ones.",
+    "gotWrong": "[TODO: what you'd check first next time]",
+    "file": "writeups/placeholder-02.md"
+  }
+]
