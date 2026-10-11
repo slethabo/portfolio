@@ -1,18 +1,26 @@
 [
   {
-    "date": "2026-03",
+    "date": "2026-06",
     "type": "volunteering",
-    "title": "[PLACEHOLDER] Volunteer role",
-    "org": "[TODO: organisation]",
-    "summary": "Fake entry. One line on what you actually did.",
+    "title": "Exhibtion Volunteer ",
+    "org": "DeepLearning Indaba",
+    "summary": "Help set up and take down for AI festival",
+    "url": ""
+  },
+    {
+    "date": "2026-10-10",
+    "type": "volunteering",
+    "title": "Set Up and Take down",
+    "org": "DevFest",
+    "summary": "Help set up and take down of event set up",
     "url": ""
   },
   {
-    "date": "2026-05",
+    "date": "2026-10",
     "type": "talk",
-    "title": "[PLACEHOLDER] Talk title",
-    "org": "[TODO: event or meetup]",
-    "summary": "Fake entry. One line on what you covered. Add a link to slides or a recording in \"url\".",
+    "title": "How to break into Cyber",
+    "org": "WICS Cyber Awareness month",
+    "summary": "Advise students on how to break into Cyber : training , Cert ect.",
     "url": ""
   }
 ]
