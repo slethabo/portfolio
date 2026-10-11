@@ -32,40 +32,37 @@ jobs:
 
       - name: Syntax-check scripts
         run: |
-          node --check projectsData.js
-          node --check app.js
-          node --check tailwind.config.js
+          node --check main.js
+          node --check theme.js
 
-      - name: Validate projectsData.js shape
+      - name: Validate write-ups and community data
         run: |
           node -e '
-            const vm = require("vm");
             const fs = require("fs");
-            const ctx = {};
-            vm.runInNewContext(fs.readFileSync("projectsData.js", "utf8") + ";this.projects = projects; this.siteConfig = siteConfig;", ctx);
-            const { projects, siteConfig } = ctx;
-            if (!Array.isArray(projects) || projects.length === 0) throw new Error("projects must be a non-empty array");
-            for (const p of projects) {
-              for (const k of ["id", "title", "demoType", "demoUrl", "githubUrl", "tags"]) {
-                if (p[k] === undefined) throw new Error(`project ${p.id || "?"} missing ${k}`);
-              }
-              if (!["video", "gif"].includes(p.demoType)) throw new Error(`project ${p.id}: demoType must be video|gif`);
-            }
-            if (!siteConfig?.name) throw new Error("siteConfig.name is required");
-            console.log(`OK: ${projects.length} projects, site for ${siteConfig.name}`);
+            const iso = /^\d{4}-\d{2}(-\d{2})?$/;
+            const check = (file, required) => {
+              const data = JSON.parse(fs.readFileSync(file, "utf8"));
+              if (!Array.isArray(data)) throw new Error(`${file} must be a JSON array`);
+              data.forEach((e, i) => {
+                for (const k of required) if (!e[k]) throw new Error(`${file}[${i}] missing "${k}"`);
+                if (!iso.test(e.date)) throw new Error(`${file}[${i}] date must be YYYY-MM or YYYY-MM-DD`);
+                if (e.file && !/^https?:/.test(e.file) && !fs.existsSync(e.file))
+                  console.log(`::warning::${file}[${i}]: ${e.file} not found`);
+                if (JSON.stringify(e).includes("[PLACEHOLDER"))
+                  console.log(`::warning::${file}[${i}] is still a placeholder`);
+              });
+              console.log(`OK: ${file} (${data.length} entries)`);
+            };
+            check("writeups/writeups.json", ["title", "date", "summary"]);
+            check("community.json", ["title", "date", "org"]);
           '
 
-      - name: Warn about missing demo media
+      - name: Warn about leftover TODOs in the page
         run: |
-          node -e '
-            const vm = require("vm"); const fs = require("fs");
-            const ctx = {}; vm.runInNewContext(fs.readFileSync("projectsData.js","utf8") + ";this.projects = projects;", ctx);
-            let missing = 0;
-            for (const p of ctx.projects) for (const u of [p.demoUrl, p.posterUrl]) {
-              if (u && u.startsWith("./") && !fs.existsSync(u)) { console.log(`::warning::${p.id}: ${u} not found (placeholder will be shown)`); missing++; }
-            }
-            console.log(missing ? `${missing} media file(s) missing` : "All referenced media present");
-          '
+          for f in index.html cv.html; do
+            count=$(grep -o "\[TODO" "$f" | wc -l)
+            if [ "$count" -gt 0 ]; then echo "::warning::$f still has $count [TODO] placeholder(s)"; fi
+          done
 
       - uses: actions/configure-pages@v5
 
