@@ -2,18 +2,25 @@
   {
     "title": "Cloud Security Labs",
     "date": "2026-01-10",
-    "platform": "PWNED Labs",
+    "platform": "Pwned Labs",
     "difficulty": "intermediate",
-    "tags": ["web", "linux", "AWS"],
+    "tags": [
+      "aws",
+      "web",
+      "linux"
+    ],
+    "summary": "Hands-on AWS labs covering reconnaissance, IAM enumeration, cloud misconfigurations, attack paths, incident response and remediation.",
     "file": "https://github.com/slethabo/cloud-security-labs"
   },
   {
-    "title": "Portswigger",
+    "title": "PortSwigger Web Security Academy: API testing",
     "date": "2026-02-14",
-    "platform": "Portswigger",
+    "platform": "PortSwigger",
     "difficulty": "medium",
-    "tags": ["linux", "privesc"],
-    "summary": "WebAPI testing.",
-    "file": "writeups/placeholder-02.md"
+    "tags": [
+      "web",
+      "api"
+    ],
+    "summary": "Web API testing labs."
   }
 ]

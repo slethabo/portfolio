@@ -185,7 +185,7 @@
               being used from a known-bad IP, but it doesn't act on the finding. Someone still has to see
               the alert, work out who owns the key, and turn it off.
             </p>
-            
+
             <h4>What I built</h4>
             <p>
               An EventBridge rule catches the finding and passes the key ID to a Lambda function, which
@@ -206,7 +206,7 @@
             </ol>
 
             <figure class="code">
-              <figcaption>infra/ · the remediation role's only permissions </figcaption>
+              <figcaption>infra/ · the remediation role's only permissions</figcaption>
 <pre><code>{
   "Effect": "Allow",
   "Action": [
@@ -227,10 +227,6 @@
               <li>The role can't touch IAM roles or the root account.</li>
               <li>CloudTrail history for the key is left intact for the investigation.</li>
             </ul>
-
-            <h4>What went wrong</h4>
-            <!-- Hint from your old project notes: the first version enumerated every IAM user to find the
-                 key owner before you switched to a single GetAccessKeyLastUsed call. Only use it if true. -->
 
             <h4>Result</h4>
             <ul>
@@ -263,7 +259,7 @@
         <p class="path" aria-hidden="true">~/labs/</p>
         <div class="col">
           <h2>Lab write-ups</h2>
-          <p class="lede">Notes from boxes and labs, newest first. Each one ends with what I got wrong.</p>
+          <p class="lede">Notes from boxes and labs, newest first.</p>
           <div class="filters" role="group" aria-label="Filter write-ups by tag" data-writeup-filters hidden></div>
           <p class="count mono muted small" aria-live="polite" data-writeup-count></p>
           <div data-writeups>
