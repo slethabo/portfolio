@@ -165,7 +165,7 @@
       if (!video || !source) continue;
       const fail = () => {
         const file = source.getAttribute("src").replace("./", "");
-        figure.innerHTML = `<p><span class="todo">[TODO: upload the demo video to ${esc(file)}]</span></p>`;
+       // figure.innerHTML = `<p><span class="todo">[TODO: upload the demo video to ${esc(file)}]</span></p>`;
       };
       // The error may already have fired before this deferred script ran.
       if (video.networkState === HTMLMediaElement.NETWORK_NO_SOURCE) fail();
